@@ -1,22 +1,19 @@
-const firstNumber = Math.floor(Math.random() * 255);
-const secondNumber = Math.floor(Math.random() * 255);
-const thirdNumber = Math.floor(Math.random() * 255);
-const buttonSelector = document.getElementById('primary-button'); 
+function randomNumberGenerator () {
+  const firstNumber = Math.floor(Math.random() * 256);
+  const secondNumber = Math.floor(Math.random() * 256);
+  const thirdNumber = Math.floor(Math.random() * 256);
+  const threeNumbers = `rgb(${firstNumber}, ${secondNumber}, ${thirdNumber})`;
+  return threeNumbers;
+}
 
-//  function randomBackgroundColorGenerator () {
-//  buttonSelector.addEventListener('click', function () {
-//    document.body.style.backgroundColor = 'green';
-//  });
-// };
+randomNumberGenerator();
 
-// randomBackgroundColorGenerator();
-
-function randomBackgroundColorGenerator () {
+function backgroundColor () {
+  const buttonSelector = document.getElementById('btn');
   buttonSelector.addEventListener('click', function () {
-    document.body.style.backgroundColor = `rgb(${firstNumber}, ${secondNumber}, ${thirdNumber}`;
+    document.body.style.backgroundColor = randomNumberGenerator();
   });
- };
- 
- randomBackgroundColorGenerator();
+}
 
+backgroundColor();
 
