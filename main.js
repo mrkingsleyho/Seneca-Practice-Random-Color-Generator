@@ -1,6 +1,6 @@
-const firstNumber = Math.floor(Math.random() * 100);
-const secondNumber = Math.floor(Math.random() * 100);
-const thirdNumber = Math.floor(Math.random() * 100);
+const firstNumber = Math.floor(Math.random() * 255);
+const secondNumber = Math.floor(Math.random() * 255);
+const thirdNumber = Math.floor(Math.random() * 255);
 const buttonSelector = document.getElementById('primary-button'); 
 
 //  function randomBackgroundColorGenerator () {
